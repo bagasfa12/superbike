@@ -1,0 +1,68 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<div class="w3-container">
+    <img src="logomv.JPG" width="100%" height="90%">
+</div>
+
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="openKota('CorelDraw')">DUCATI V4R</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Photoshop')">MV AGUSTA F4</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Illustrator')">APRILIA RSV4</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('PremierPro')">BMW S1000RR</button>
+</div>
+
+<div id="" class="w3-container kota w3-animate-zoom">
+    <center>
+    <h1>SELAMAT DATANG</h1>
+    <hr>
+    <h2>SOFTWARE EDITING<br>
+    10121031 - BAGAS FAJAR AULIA</h2>
+   </div>
+
+<div id="CorelDraw" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>DUCATI PANIGALE V4R</h2>
+ <img src="ducati.jpg" width="300">
+ <p>Ducati Panigale V4R memiliki spesifikasi yang menggiurkan. 
+ Kuda besi ini dibekali mesin Desmosedici Stradale berkapasitas 1.103 cc dan memiliki diameter x langkah 821 mm x 53,5 dengan empat katup pada tiap silinder mesin. 
+ Jantung pacu ini membuat Ducati Panigale V4R dapat memberikan pengendara akselerasi yang luar biasa cepat..</p>
+</div>
+
+<div id="Photoshop" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>MV AGUSTA F4</h2>
+ <img src="mv.jpg" width="300">
+ <p>Bicara soal spesifikasi mesin MV Agusta F4, 
+ ini ditenagai dua pilihan mesin Petrol berkapasitas 998 cc. F4 tersedia dengan transmisi Manual tergantung variannya.
+ F4 adalah Sport 1 seater dengan panjang 2115 mm, lebar 750 mm, wheelbase 1430 mm. serta ground clearance 115 mm..</p>
+</div>
+
+<div id="Illustrator" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>APRILIA RSV4</h2>
+ <img src="aprilia.jpg" width="300">
+ <p>Motor ini hadir sebagai motor sport tulen dengan berbekal mesin yang berkapasitas 1000cc dengan jenis mesin 4 tak, DOHC, 4 Valve
+ dengan disertai sistem pendinginan berupa cairan (Liquid Cooled).
+ Dengan memakai spesifikasi mesin tersebut Aprilia RSV4 RR ini mampu menghasilkan tenaga maksimum sebesar 201 hp pada putaran mesin sebesar 13.000 rpm..</p>
+</div>
+
+<div id="PremierPro" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>BMW S1000RR</h2>
+ <img src="BMW.jpg" width="300">
+ <p>Spesifikasi BMW S1000RR : Panjang motor mencapai : 2056 mm. Lebar hingga 826 mm. Tinggiya sampai dengan 1138 mm. Tinggi jok alias tempat duduknya yaitu 820 mm. Berat kosog motor yaitu : 178 kg. Jarak sumbu antar rodanya mencapai : 1422,7 mm. Kapasitas tangki bahan bakarnya mencapai 17,5 liter. 2.
+ </p>
+</div>
+
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaKota).style.display = "block";
+}
+</script>
+</body>
+</html>
